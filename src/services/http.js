@@ -7,7 +7,7 @@ const MD5 = function(d){var r = M(V(Y(X(d),8*d.length)));return r.toLowerCase()}
 const hash = MD5(`${ts}${privateKey}${publicKey}`);
 
 const instance = axios.create({
-  baseURL: 'http://gateway.marvel.com/v1/public',
+  baseURL: 'https://gateway.marvel.com/v1/public',
   params: {
     ts,
     apikey: publicKey,
